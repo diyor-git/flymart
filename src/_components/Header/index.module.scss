@@ -1,0 +1,89 @@
+@import "../../colors";
+
+.header {
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .left {
+      padding-top: 100px;
+
+      h1 {
+        font-size: 46px;
+        margin-bottom: 16px;
+        font-weight: 900;
+        line-height: normal;
+
+        span {
+          color: $brandPrimary;
+        }
+      }
+
+      p {
+        color: $contentPrimary;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+        margin-bottom: 40px;
+      }
+
+      .btns {
+        margin-bottom: 64px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        button {
+          background: $white;
+          padding: 16px 28px;
+          border-radius: 40px;
+          font-size: 20px;
+          cursor: pointer;
+          font-weight: 700;
+          border: 2px solid $brandPrimary;
+
+          &:nth-child(1) {
+            color: $white;
+            background: $brandPrimary;
+            box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.20);
+          }
+        }
+
+      }
+
+      .statistics {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .statistic {
+          h3 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 120%;
+          }
+
+          p {
+            font-size: 24px;
+            color: $contentSecondary;
+            font-weight: 300;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .right {
+      img {
+        max-width: 670px;
+        width: 100%;
+      }
+    }
+  }
+
+  .wave {
+    margin-top: 80px;
+    width: 100%;
+  }
+}

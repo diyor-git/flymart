@@ -1,0 +1,50 @@
+@import "../../colors";
+
+.trainings {
+  padding: 80px 0 120px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .arrows {
+      display: flex;
+      align-items: center;
+
+      button {
+        padding: 8px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &:nth-child(2) {
+          img {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+
+      h2 {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: $contentPrimary;
+      }
+
+      h4 {
+        color: $brandPrimary;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 120%;
+      }
+    }
+  }
+}

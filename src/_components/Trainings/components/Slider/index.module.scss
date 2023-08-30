@@ -1,0 +1,14 @@
+
+.productCarousel {
+  position: relative;
+  margin-top: 40px;
+}
+
+.productContainer {
+  margin: auto;
+  display: flex;
+  overflow-x: hidden;
+  padding: 50px;
+  gap: 40px;
+  scroll-behavior: smooth;
+}

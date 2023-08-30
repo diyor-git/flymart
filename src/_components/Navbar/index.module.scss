@@ -1,0 +1,71 @@
+@import "../../colors";
+
+.nav {
+  border-top: 4px solid $brandPrimary;
+  padding: 18px 0;
+
+  .content, .left, ul, .right, .lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .right, .left {
+    gap: 32px;
+  }
+
+  .content {
+    ul {
+      li {
+        a {
+          display: block;
+          padding: 12px;
+          font-size: 14px;
+          font-weight: 500;
+          transition: 300ms;
+
+          &:hover {
+            color: $brandPrimary;
+          }
+        }
+      }
+    }
+
+    .right {
+      .lang {
+        h3 {
+          font-size: 12px;
+          font-weight: 700;
+          cursor: pointer;
+          line-height: 26px;
+          width: 32px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &.active {
+            color: $white;
+            background: $contentPrimary;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      button {
+        padding: 12px 16px;
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        border-radius: 12px;
+        background: $brandPrimary;
+        border: 2px solid $brandPrimary;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+}
